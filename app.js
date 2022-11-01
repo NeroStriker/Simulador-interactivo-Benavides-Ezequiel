@@ -50,6 +50,7 @@ function IncrementScore(scoreSpan) {
 }
 
 
+
 function addSelectionResult(selection, winner) {
     const div = document.createElement("div")
     div.innerText = selection.emoji
