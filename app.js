@@ -1,3 +1,7 @@
+let nombre = prompt("Ingrese su nombre");
+let saludo = "Bienvenido " + nombre + " a piedra papel o tijera online";
+alert(saludo);
+
 const selectionButtons = document.querySelectorAll("[data-selection]")
 const finalColumn = document.querySelector("[data-final-column]")
 const computerScoreSpan = document.querySelector("[data-computer-score]")
