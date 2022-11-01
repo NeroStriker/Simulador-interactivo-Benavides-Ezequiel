@@ -1,17 +1,28 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <script src="/script.js"></script>
-        <title>Pimer trabajo</title>
+        <script src="./app.js" defer></script>
+        <title>Rock Paper Scissors</title>
     </head>
-<body>
-    <h1>Consiste en 3 partes, pregunta la hora, el dia, y luego permite usar la calculadora de IVA</h1>
-    <h1>todo esta incluido en la consola para no mostrar tantas alertas, tiene un loop al final solo porque si</h1>
-    
-</body>
-
+    <body>
+        <h1>Piedra Papel o Tijeras online</h1>
+        <div class="selections">
+            <button class="selection" data-selection="rock">✊</button>
+            <button class="selection" data-selection="paper">✋</button>
+            <button class="selection" data-selection="scissors">✌️</button>
+        </div>
+        <div class="results">
+            <div>
+                Tu
+                <span class="resultScore" data-your-score>0</span>
+            </div>
+            <div data-final-column>
+                Computadora
+                <span class="resultScore" data-computer-score>0</span>
+            </div>            
+        </div>
+    </body>
 </html>
