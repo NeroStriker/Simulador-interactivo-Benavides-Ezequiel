@@ -46,8 +46,14 @@ function makeSelection(selection) {
 }
 
 function IncrementScore(scoreSpan) {
-    scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1
+    if (scoreSpan.innerText === "2") {
+        scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1
+        alert("Fin!")
+    } else {
+        scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1
+    }
 }
+
 
 
 
@@ -67,3 +73,4 @@ function randomSelection() {
     const randomIndex = Math.floor( Math.random() * SELECTIONS.length)
     return SELECTIONS[randomIndex]
 }
+
